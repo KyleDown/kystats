@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+  <style>
+    
+  </style>
+  
+  </head >
+   
+
+  <body >
+    <nav >
+        <div >
+            <a href="#">Statition</a>
+        </div>
+        <button class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <ul class="nav-links grid">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="players.html">Players</a></li>
+            <li><a href="team.html">Teams</a></li>
+            <li><a href="expStats.html">Stat Explanation</a></li>
+            <li><a href="articles.html">Articles</a></li>
+            <li><a href="case.html">Case Studies</a></li>
+        </ul>
+    </nav>
+
+    <p>Players</p>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const hamburger = document.querySelector('.hamburger');
+            const navLinks = document.querySelector('.nav-links');
+        
+            hamburger.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+            });
+        });
+    </script>
+
+    </body>
