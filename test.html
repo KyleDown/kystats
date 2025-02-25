@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expandable Text Box</title>
+    <style>
+        .text-box {
+            width: 200px;
+            height: 100px;
+            overflow: hidden;
+            background-color: lightgray;
+            padding: 10px;
+            border: 2px solid black;
+            cursor: pointer;
+            transition: height 0.3s ease;
+        }
+
+        .expanded {
+            height: auto;
+            width: auto;
+        }
+    </style>
+</head>
+<body>
+
+<div class="text-box" onclick="toggleExpand(this)">
+   <p>This website is the research and development of new sports statistics. Stats are crucial in understanding a teams’/platers’ performance. Each major sport has a boxscore. Boxscore data can be traced back to the late 1800s. We can thank Mr. Henry Chadwick. The first baseball boxscore looks different from the one that we see today. It is the same with basketball. Some of the most important stats that we look at in basketball weren’t around in the early start of professional basketball. A few examples are blocks, steals and offensive rebounds. The 3 point line was implemented into the NBA until the 1979-80 season.  Stats and analytics are always changing as well. I have mainly looked at the development of basketball statistics. I have developed 13 new experimental stats and have data on 10 of them. I will sometimes refer to the stats that I have developed as KyStats. This website will contain information on each stat, including definition, analysis, tables, and graphs. 
+    Now let's look at an example of one of these KyStats I've developed: MT(Meaningful Touch). MT - Meaningful touch is the sum of Field goals made, Free Throws made, rebounds, Assists, Steals, and Blocks for one team. This looks at every time a player does something positive to affect the game. An example of this stat comes from game one of round one of the bulls finals run in 1992; FG=47, FT=19, TRB=44, AST=33, STL= 8, BLK= 6; add up all these data points to get MT=157. This number gives us a glimpse of the box score with just one number. You’d think that the team that has a higher MT was the winner. For most of the time that is true but not definite. 
+  This website will document the process of creating new stats from start to finish. With more research within each stat this helps better understand statistics and in turn create more statistics that build upon each other. These experimental stat points are mainly focused on team data but with further research and slight adjustment many of these new statistics could also be adapted to work with individual playersFurthermore this website will dive into the topic of stats and how stats can be even more analyzed to better understand the mechanics of sports. Please check out other pages to see more KyStats. Any feedback send to the email address down below.
+  </p> 
+</div>
+
+<script>
+    function toggleExpand(element) {
+        element.classList.toggle("expanded");
+    }
+</script>
+
+</body>
+</html>
