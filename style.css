@@ -21,18 +21,4 @@ ul {
   li a:hover {
     background-color: #111;
   }
-  .container{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: start;
-  }
-  .box{
-    width: 300%;
-    background-color: lightblue;
-    border: 2px solid blue;
-    padding: 10px;
-    margin: 0px;
-   box-sizing: border-box;
-  }
   
