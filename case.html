@@ -8,6 +8,33 @@
     body {
         background-color: rgb(7, 207, 225);
     }
+    .table-container {
+        width: 600px; /* Fixed size */
+        overflow-x: auto; /* Allows scrolling on smaller screens */
+        background-color: lightgray;
+        padding: 10px;
+        border: 2px solid black;
+    }
+    
+    .table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    
+    .table th, .table td {
+        border: 1px solid black;
+        padding: 8px;
+        text-align: center;
+    }
+    
+    .table th {
+        background-color: darkgray;
+        font-weight: bold;
+    }
+    
+    .table tr:nth-child(even) {
+        background-color: #f2f2f2; /* Alternate row color */
+    }
   </style>
   
   </head >
@@ -35,6 +62,37 @@
     <!--turn each case study into a clickable link that takes the use to more data-->
     <h1>Case Studies</h1>
     <h3>NBA Celtics 2024-2025 Season (Case Study 1) [for experimental stats]</h3>
+    <div class="table-container">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>WL</th>
+                    <th>MT</th>
+                    <th>PP</th>
+                    <th>YE</th>
+                    <th>TPy</th>
+                    <th>TAS</th>
+                    <th>SS</th>
+                    <th>PAP</th>
+                    <th>DP</th>
+                    <th>DS</th>
+                    <th>4L</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>W</td><td>136</td><td>8</td><td>61</td><td>10</td><td>16</td><td>348</td><td>229</td><td>8</td><td>8</td><td>102</td></tr>
+                <tr><td>L</td><td>129</td><td>8</td><td>61</td><td>10</td><td>16</td><td>353</td><td>213</td><td>13</td><td>3</td><td>85</td></tr>
+                <tr><td>W</td><td>129</td><td>11</td><td>76</td><td>17</td><td>16</td><td>358</td><td>222</td><td>7</td><td>5</td><td>87</td></tr>
+                <tr><td>W</td><td>127</td><td>9</td><td>67</td><td>12</td><td>16</td><td>363</td><td>227</td><td>5</td><td>5</td><td>87</td></tr>
+                <tr><td>W</td><td>147</td><td>12</td><td>74</td><td>16</td><td>15</td><td>340</td><td>221</td><td>8</td><td>6</td><td>99</td></tr>
+                <tr><td>W</td><td>143</td><td>11</td><td>69</td><td>14</td><td>15</td><td>345</td><td>244</td><td>6</td><td>7</td><td>97</td></tr>
+                <tr><td>L</td><td>114</td><td>14</td><td>76</td><td>17</td><td>15</td><td>350</td><td>219</td><td>7</td><td>5</td><td>83</td></tr>
+                <tr><td>W</td><td>125</td><td>12</td><td>71</td><td>15</td><td>15</td><td>355</td><td>208</td><td>7</td><td>5</td><td>87</td></tr>
+                <tr><td>W</td><td>132</td><td>8</td><td>60</td><td>10</td><td>15</td><td>360</td><td>212</td><td>7</td><td>5</td><td>86</td></tr>
+                <tr><td>W</td><td>139</td><td>8</td><td>60</td><td>10</td><td>15</td><td>365</td><td>215</td><td>6</td><td>8</td><td>103</td></tr>
+            </tbody>
+        </table>
+    </div>
     <p>-this will be updated throughout the NBA season</p>
     <p>-preseason, regular, Playoffs, NBA cup, and finals. This data will be kept in the GTN </p>
     <p>(GameTypeNumber) </p>
