@@ -9,7 +9,7 @@
         background-color: rgb(7, 207, 225);
     }
     .table-container {
-        width: 600px; /* Fixed size */
+        width: auto; /* Fixed size */
         overflow-x: auto; /* Allows scrolling on smaller screens */
         background-color: lightgray;
         padding: 10px;
@@ -23,7 +23,7 @@
     
     .table th, .table td {
         border: 1px solid black;
-        padding: 8px;
+        /*padding: 8px;*/
         text-align: center;
     }
     
@@ -64,32 +64,30 @@
     <h3>NBA Celtics 2024-2025 Season (Case Study 1) [for experimental stats]</h3>
     <div class="table-container">
         <table class="table">
+
             <thead>
-                <tr>
-                    <th>WL</th>
-                    <th>MT</th>
-                    <th>PP</th>
-                    <th>YE</th>
-                    <th>TPy</th>
-                    <th>TAS</th>
-                    <th>SS</th>
-                    <th>PAP</th>
-                    <th>DP</th>
-                    <th>DS</th>
-                    <th>4L</th>
-                </tr>
+                <tr><th>GN</th><th>Team</th><th>HA</th><th>WL</th><th>MT</th><th>PP</th><th>YE</th><th>TPy</th><th>TAS</th><th>SS</th><th>PAP</th><th>DP</th><th>DS</th><th>4L</th><th>OpTeam</th><th>OpMT</th><th>OpPP</th><th>OpYE</th><th>OpTPy</th><th>OpTAS</th><th>OpSS</th><th>OpPAP</th><th>OpDP</th><th>OpDS</th><th>Op4L</th><th>GTN</th></tr>
             </thead>
             <tbody>
-                <tr><td>W</td><td>136</td><td>8</td><td>61</td><td>10</td><td>16</td><td>348</td><td>229</td><td>8</td><td>8</td><td>102</td></tr>
-                <tr><td>L</td><td>129</td><td>8</td><td>61</td><td>10</td><td>16</td><td>353</td><td>213</td><td>13</td><td>3</td><td>85</td></tr>
-                <tr><td>W</td><td>129</td><td>11</td><td>76</td><td>17</td><td>16</td><td>358</td><td>222</td><td>7</td><td>5</td><td>87</td></tr>
-                <tr><td>W</td><td>127</td><td>9</td><td>67</td><td>12</td><td>16</td><td>363</td><td>227</td><td>5</td><td>5</td><td>87</td></tr>
-                <tr><td>W</td><td>147</td><td>12</td><td>74</td><td>16</td><td>15</td><td>340</td><td>221</td><td>8</td><td>6</td><td>99</td></tr>
-                <tr><td>W</td><td>143</td><td>11</td><td>69</td><td>14</td><td>15</td><td>345</td><td>244</td><td>6</td><td>7</td><td>97</td></tr>
-                <tr><td>L</td><td>114</td><td>14</td><td>76</td><td>17</td><td>15</td><td>350</td><td>219</td><td>7</td><td>5</td><td>83</td></tr>
-                <tr><td>W</td><td>125</td><td>12</td><td>71</td><td>15</td><td>15</td><td>355</td><td>208</td><td>7</td><td>5</td><td>87</td></tr>
-                <tr><td>W</td><td>132</td><td>8</td><td>60</td><td>10</td><td>15</td><td>360</td><td>212</td><td>7</td><td>5</td><td>86</td></tr>
-                <tr><td>W</td><td>139</td><td>8</td><td>60</td><td>10</td><td>15</td><td>365</td><td>215</td><td>6</td><td>8</td><td>103</td></tr>
+                <tr><td>1</td><td>BOS</td><td>H</td><td>W</td><td>136</td><td>8</td><td>61</td><td>10</td><td>16</td><td>348</td><td>229</td><td>8</td><td>8</td><td>102</td><td>MIA</td><td>106</td><td>9</td><td>46</td><td>12</td><td>8</td><td>197</td><td>205</td><td>4</td><td>5</td><td>79</td><td>ECF1</td></tr>
+                <tr><td>2</td><td>BOS</td><td>H</td><td>L</td><td>129</td><td>8</td><td>61</td><td>10</td><td>16</td><td>353</td><td>213</td><td>13</td><td>3</td><td>85</td><td>MIA</td><td>126</td><td>9</td><td>46</td><td>12</td><td>8</td><td>202</td></tr>
+                <tr><td>3</td><td>BOS</td><td>A</td><td>W</td><td>129</td><td>11</td><td>76</td><td>17</td><td>16</td><td>358</td><td>222</td><td>7</td><td>5</td><td>87</td><td>MIA</td><td>104</td><td>11</td><td>59</td><td>13</td><td>8</td><td>207</td></tr>
+                <tr><td>4</td><td>BOS</td><td>A</td><td>W</td><td>127</td><td>9</td><td>67</td><td>12</td><td>16</td><td>363</td><td>227</td><td>5</td><td>5</td><td>87</td><td>MIA</td><td>110</td><td>10</td><td>60</td><td>15</td><td>8</td><td>212</td></tr>
+                <tr><td>5</td><td>BOS</td><td>H</td><td>W</td><td>147</td><td>12</td><td>74</td><td>16</td><td>15</td><td>340</td><td>221</td><td>8</td><td>6</td><td>99</td><td>MIA</td><td>98</td><td>10</td><td>66</td><td>17</td><td>8</td><td>194</td></tr>
+                <tr><td>6</td><td>BOS</td><td>H</td><td>W</td><td>143</td><td>11</td><td>69</td><td>14</td><td>15</td><td>345</td><td>244</td><td>6</td><td>7</td><td>97</td><td>CLE</td><td>109</td><td>10</td><td>60</td><td>16</td><td>6</td><td>309</td></tr>
+                <tr><td>7</td><td>BOS</td><td>H</td><td>L</td><td>114</td><td>14</td><td>76</td><td>17</td><td>15</td><td>350</td><td>219</td><td>7</td><td>5</td><td>83</td><td>CLE</td><td>133</td><td>11</td><td>67</td><td>18</td><td>6</td><td>314</td></tr>
+                <tr><td>8</td><td>BOS</td><td>A</td><td>W</td><td>125</td><td>12</td><td>71</td><td>15</td><td>15</td><td>355</td><td>208</td><td>7</td><td>5</td><td>87</td><td>CLE</td><td>103</td><td>10</td><td>57</td><td>16</td><td>6</td><td>319</td></tr>
+                <tr><td>9</td><td>BOS</td><td>A</td><td>W</td><td>132</td><td>8</td><td>60</td><td>10</td><td>15</td><td>360</td><td>212</td><td>7</td><td>5</td><td>86</td><td>CLE</td><td>115</td><td>9</td><td>46</td><td>11</td><td>6</td><td>269</td></tr>
+                <tr><td>10</td><td>BOS</td><td>H</td><td>W</td><td>139</td><td>8</td><td>60</td><td>10</td><td>15</td><td>365</td><td>215</td><td>6</td><td>8</td><td>103</td><td>CLE</td><td>107</td><td>9</td><td>51</td><td>15</td><td>6</td><td>295</td></tr>
+                <tr><td>11</td><td>BOS</td><td>H</td><td>W</td><td>136</td><td>8</td><td>61</td><td>10</td><td>16</td><td>348</td><td>229</td><td>8</td><td>8</td><td>102</td><td>IND</td><td>156</td><td>10</td><td>38</td><td>7</td><td>4</td><td>350</td></tr>
+                <tr><td>12</td><td>BOS</td><td>H</td><td>L</td><td>129</td><td>8</td><td>61</td><td>10</td><td>16</td><td>353</td><td>213</td><td>13</td><td>3</td><td>85</td><td>IND</td><td>122</td><td>13</td><td>48</td><td>11</td><td>4</td><td>355</td></tr>
+                <tr><td>13</td><td>BOS</td><td>A</td><td>W</td><td>129</td><td>11</td><td>76</td><td>17</td><td>16</td><td>358</td><td>222</td><td>7</td><td>5</td><td>87</td><td>IND</td><td>140</td><td>9</td><td>41</td><td>9</td><td>2</td><td>278</td></tr>
+                <tr><td>14</td><td>BOS</td><td>A</td><td>W</td><td>127</td><td>9</td><td>67</td><td>12</td><td>16</td><td>363</td><td>227</td><td>5</td><td>5</td><td>87</td><td>IND</td><td>132</td><td>9</td><td>41</td><td>9</td><td>2</td><td>283</td></tr>
+                <tr><td>15</td><td>BOS</td><td>H</td><td>W</td><td>147</td><td>12</td><td>74</td><td>16</td><td>15</td><td>340</td><td>221</td><td>8</td><td>6</td><td>99</td><td>DAL</td><td>108</td><td>12</td><td>67</td><td>13</td><td>13</td><td>332</td></tr>
+                <tr><td>16</td><td>BOS</td><td>H</td><td>W</td><td>143</td><td>11</td><td>69</td><td>14</td><td>15</td><td>345</td><td>244</td><td>6</td><td>7</td><td>97</td><td>DAL</td><td>126</td><td>10</td><td>48</td><td>11</td><td>13</td><td>337</td></tr>
+                <tr><td>17</td><td>BOS</td><td>A</td><td>L</td><td>114</td><td>14</td><td>76</td><td>17</td><td>15</td><td>350</td><td>219</td><td>7</td><td>5</td><td>83</td><td>DAL</td><td>116</td><td>11</td><td>58</td><td>13</td><td>13</td><td>342</td></tr>
+                <tr><td>18</td><td>BOS</td><td>A</td><td>W</td><td>125</td><td>12</td><td>71</td><td>15</td><td>15</td><td>355</td><td>208</td><td>7</td><td>5</td><td>87</td><td>DAL</td><td>143</td><td>15</td><td>80</td><td>17</td><td>13</td><td>347</td></tr>
+                <tr><td>19</td><td>BOS</td><td>H</td><td>W</td><td>132</td><td>8</td><td>60</td><td>10</td><td>15</td><td>360</td><td>212</td><td>7</td><td>5</td><td>86</td><td>DAL</td><td>103</td><td>14</td><td>68</td><td>14</td><td>13</td><td>352</td></tr>
             </tbody>
         </table>
     </div>
