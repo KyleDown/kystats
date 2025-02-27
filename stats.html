@@ -8,6 +8,33 @@
     body {
         background-color: rgb(134, 151, 134);
     }
+    .table-container {
+        width: auto; /* Fixed size */
+        overflow-x: auto; /* Allows scrolling on smaller screens */
+        background-color: lightgray;
+        padding: 10px;
+        border: 2px solid black;
+    }
+    
+    .table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    
+    .table th, .table td {
+        border: 1px solid black;
+        /*padding: 8px;*/
+        text-align: center;
+    }
+    
+    .table th {
+        background-color: darkgray;
+        font-weight: bold;
+    }
+    
+    .table tr:nth-child(even) {
+        background-color: #f2f2f2; /* Alternate row color */
+    }
   </style>
   
   </head >
@@ -43,6 +70,19 @@
     <img  src="test1.png" alt="" style="height: 200px;">
 
     <h2>Tables</h2>
+    <div>
+        <p>GN: Game Number</p><p>Team: Team Abjreviation</p><p>HA: Home or Away (H: Home, A: Away)</p><p>Win or Loss (W: Win, L: Loss)</p><p>MT: Meaningful Touch</p><p>PP: Players Played</p><p>YE: Years of Expierence</p><p>TPy: Teams Played</p><p>TAS: Total AllStar Apperances</p><p>SS: Starters Starting</p><p>PAP: Possible Acumulated Points</p><p>DP: Double didgit Points</p><p>DS: Defensive Stat</p><p>4L: 4 Level Scoring</p><p>GTN: Game Type and Number</p>
+        </div>
+        <div class="table-container">
+            <table class="table">
+        <thead>
+            <tr><th>GN</th><th>Team</th><th>HA</th><th>WL</th><th>FG</th><th>FT</th><th>TR</th><th>TA</th><th>TS</th><th>TB</th><th>MT</th><th>OpTeam</th><th>FG</th><th>FT</th><th>TR</th><th>TA</th><th>TS</th><th>TB</th><th>OpMT</th><th>GTN</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>1</td><td>BOS</td><td>H</td><td>W</td><td>136</td><td>MIA</td><td>106</td><td>ECF1</td></tr>
+    </tbody>
+</table>
+</div>
     <img src="test2.png" alt="" style="height: 200px;">
     <img  src="test3.png" alt="" style="height: 200px;">
     <img  src="test4.png" alt="" style="height: 200px;">
